@@ -1,5 +1,8 @@
 
 	@	Put the required header information here
+	@JACOB MATHIEU
+	@OCT23 2018
+	@INTRO TO COMP ORG AND ASSEMBLY
 
 	.extern printf
 	.extern scanf
@@ -16,7 +19,13 @@ main:
 	@ Your code must put the final answer
 	@ in R1.
 	@-------------
+	MOV R1, #0
 
+_loop:
+	ADD R1, R2, R1 @adds R2 value to R1
+	ADD R2, R2, #1 @Incriments R2 by 1
+	CMP R2, R3 @Checks when to stop the counting 
+	BLE _loop @ ends loop
 	
 	
 	@-------------
